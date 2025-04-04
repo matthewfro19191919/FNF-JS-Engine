@@ -148,6 +148,14 @@ class WeekData {
 							weekFile.folder = directories[j].substring(Paths.mods().length, directories[j].length-1);
 						}
 						#end
+			   if((PlayState.isUniverse))
+				fileToCheck = directories[j] + 'universe-weeks/Universe/' + sexList[i] + '.json';
+			   if((PlayState.isGolden))
+			        fileToCheck = directories[j] + 'universe-weeks/Golden/' + sexList[i] + '.json';
+			   if((PlayState.isDaveAndBambi))
+			        fileToCheck = directories[j] + 'universe-weeks/DaveAndBambi/' + sexList[i] + '.json';
+			   if((PlayState.isSecret))
+				fileToCheck = directories[j] + 'universe-weeks/Secret/' + sexList[i] + '.json';
 
 						if(weekFile != null && (isStoryMode == null || (isStoryMode && !weekFile.hideStoryMode) || (!isStoryMode && !weekFile.hideFreeplay))) {
 							weeksLoaded.set(sexList[i], weekFile);
