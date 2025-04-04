@@ -352,6 +352,10 @@ class MainMenuState extends MusicBeatState
 
 								switch (daChoice)
 								{
+									case 'play':
+										FlxG.switchState(PlayMenuState.new);
+									case 'extras':
+										FlxG.switchState(ExtrasMenuState‎.new);
 									case 'story_mode':
 										FlxG.switchState(StoryMenuState.new);
 									case 'freeplay':
@@ -383,7 +387,7 @@ class MainMenuState extends MusicBeatState
 			}
 		#if (desktop)
 		else if (FlxG.keys.anyJustPressed(debugKeys)) {
-			FlxG.switchState(FreeplayState.new); 
+			FlxG.switchState(MasterEditorMenu.new); 
       PlayState.isSecret = true;
 		}
 		#end
