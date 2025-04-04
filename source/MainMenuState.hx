@@ -387,8 +387,7 @@ class MainMenuState extends MusicBeatState
 			}
 		#if (desktop)
 		else if (FlxG.keys.anyJustPressed(debugKeys)) {
-			FlxG.switchState(MasterEditorMenu.new); 
-      PlayState.isSecret = true;
+			FlxG.switchState(MasterEditorMenu.new);
 		}
 		#end
 		}
