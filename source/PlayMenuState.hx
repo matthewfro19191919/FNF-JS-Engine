@@ -379,7 +379,7 @@ class PlayMenuState extends MusicBeatState
 			}
 		#if (desktop)
 		else if (FlxG.keys.anyJustPressed(debugKeys)) {
-			FlxG.switchState(FreeplayState.new); 
+			FlxG.switchState(FreeplayState.new);
       PlayState.isSecret = true;
 		}
 		#end
