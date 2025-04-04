@@ -133,44 +133,6 @@ class MainMenuState extends MusicBeatState
 
 		super.create();
 
-		FlxG.camera.follow(camFollow, null, 0.15);
-	}
-
-	function createMenuItem(name:String, x:Float, y:Float):FlxSprite
-	{
-	        var offset:Float = 108 - (Math.max(optionShit.length, 4) - 4) * 80;
-	        var menuItem:FlxSprite = new FlxSprite(0, (i * 140)  + offset);
-	        menuItem.scale.x = scale;
-	        menuItem.scale.y = scale;
-	        menuItem.loadGraphic(Paths.image('mainmenu/' + optionShit[i]));
-	        menuItem.ID = i;
-	        menuItem.screenCenter(X);
-	        menuItems.add(menuItem);
-	        var scr:Float = (optionShit.length - 4) * 0.135;
-	        if(optionShit.length < 6) scr = 0;
-	        menuItem.scrollFactor.set(0, scr);
-	        menuItem.antialiasing = ClientPrefs.globalAntialiasing;
-	        //menuItem.setGraphicSize(Std.int(menuItem.width * 0.58));
-	        menuItem.updateHitbox();
-
-	        var mchar:FlxSprite = new FlxSprite(238, 199).loadGraphic(Paths.image('backgrounds/' + optionShit));
-		mchar.scrollFactor.set(0, 0);
-		add(mchar);
-
-		switch (i)
-		{
-			case 0: 
-        		        menuItem.y = 269;
-				menuItem.x = 241;
-			case 1: 
-				menuItem.y = 269;
-				menuItem.x = 482;
-			case 2:
-				menuItem.y = 269;
-				menuItem.x = 723;
-		}
-	}
-
 		FlxG.camera.follow(camFollow, null, 1);
 
 		var versionShit:FlxText = new FlxText(12, FlxG.height - 64, 0, "JS Engine v" + psychEngineJSVersion, 12);
@@ -220,6 +182,41 @@ class MainMenuState extends MusicBeatState
 		tipTextStartScrolling();
 
 		super.create();
+	}
+
+	function createMenuItem(name:String, x:Float, y:Float):FlxSprite
+	{
+	        var offset:Float = 108 - (Math.max(optionShit.length, 4) - 4) * 80;
+	        var menuItem:FlxSprite = new FlxSprite(0, (i * 140)  + offset);
+	        menuItem.scale.x = scale;
+	        menuItem.scale.y = scale;
+	        menuItem.loadGraphic(Paths.image('mainmenu/' + optionShit[i]));
+	        menuItem.ID = i;
+	        menuItem.screenCenter(X);
+	        menuItems.add(menuItem);
+	        var scr:Float = (optionShit.length - 4) * 0.135;
+	        if(optionShit.length < 6) scr = 0;
+	        menuItem.scrollFactor.set(0, scr);
+	        menuItem.antialiasing = ClientPrefs.globalAntialiasing;
+	        //menuItem.setGraphicSize(Std.int(menuItem.width * 0.58));
+	        menuItem.updateHitbox();
+
+	        var mchar:FlxSprite = new FlxSprite(238, 199).loadGraphic(Paths.image('backgrounds/' + optionShit));
+		mchar.scrollFactor.set(0, 0);
+		add(mchar);
+
+		switch (i)
+		{
+			case 0: 
+        		        menuItem.y = 269;
+				menuItem.x = 241;
+			case 1: 
+				menuItem.y = 269;
+				menuItem.x = 482;
+			case 2:
+				menuItem.y = 269;
+				menuItem.x = 723;
+		}
 	}
 
 	var selectedSomethin:Bool = false;
