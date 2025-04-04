@@ -219,6 +219,8 @@ class MainMenuState extends MusicBeatState
 		}
 	}
 
+		FlxG.camera.follow(camFollow, null, 1);
+
 	var selectedSomethin:Bool = false;
 	//credit to stefan2008 and sb engine for this code
 	function tipTextStartScrolling()
