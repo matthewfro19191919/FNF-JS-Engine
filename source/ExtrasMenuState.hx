@@ -22,7 +22,7 @@ import backend.HaxeCommit;
 
 using StringTools;
 
-class PlayMenuState extends MusicBeatState
+class ExtrasMenuState extends MusicBeatState
 {
 	public static final gitCommit:String = HaxeCommit.getGitCommitHash();
 
