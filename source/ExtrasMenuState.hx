@@ -102,7 +102,7 @@ class PlayMenuState extends MusicBeatState
 		magenta.screenCenter();
 		add(magenta);
 
-		var magenta2 = new FlxSprite(238, 199).loadGraphic(Paths.image('backgrounds/thing'));
+		var magenta2 = new FlxSprite(238, -199).loadGraphic(Paths.image('backgrounds/thing'));
 		magenta2.scrollFactor.set(0, yScroll);
 		magenta2.updateHitbox();
 		magenta2.screenCenter();
