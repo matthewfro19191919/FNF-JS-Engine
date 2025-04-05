@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="bfPixel.png">
+<SubTexture name="BF DOWN MISS instance 0000" x="287" y="0" width="55" height="53" frameX="-5" frameY="-20" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF DOWN MISS instance 0001" x="55" y="126" width="53" height="57" frameX="-5" frameY="-16" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF DOWN MISS instance 0002" x="55" y="126" width="53" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF DOWN MISS instance 0003" x="173" y="184" width="54" height="54" frameX="-5" frameY="-19" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF DOWN MISS instance 0004" x="173" y="184" width="54" height="54" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF DOWN MISS instance 0005" x="173" y="184" width="54" height="54" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF DOWN MISS instance 0006" x="173" y="184" width="54" height="54" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF DOWN MISS instance 0007" x="173" y="184" width="54" height="54" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF DOWN MISS instance 0008" x="173" y="184" width="54" height="54" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF DOWN MISS instance 0009" x="173" y="184" width="54" height="54" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF DOWN MISS instance 0010" x="173" y="184" width="54" height="54" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF DOWN MISS instance 0011" x="173" y="184" width="54" height="54" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF DOWN MISS instance 0012" x="173" y="184" width="54" height="54" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF DOWN MISS instance 0013" x="173" y="184" width="54" height="54" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF DOWN NOTE instance 0000" x="287" y="0" width="55" height="53" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF DOWN NOTE instance 0001" x="287" y="0" width="55" height="53" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF DOWN NOTE instance 0002" x="227" y="184" width="54" height="54" frameX="-5" frameY="-19" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF DOWN NOTE instance 0003" x="227" y="184" width="54" height="54" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF DOWN NOTE instance 0004" x="227" y="184" width="54" height="54" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF DOWN NOTE instance 0005" x="227" y="184" width="54" height="54" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF DOWN NOTE instance 0006" x="227" y="184" width="54" height="54" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF DOWN NOTE instance 0007" x="227" y="184" width="54" height="54" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF DOWN NOTE instance 0008" x="227" y="184" width="54" height="54" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF DOWN NOTE instance 0009" x="227" y="184" width="54" height="54" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF DOWN NOTE instance 0010" x="227" y="184" width="54" height="54" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF DOWN NOTE instance 0011" x="227" y="184" width="54" height="54" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF DOWN NOTE instance 0012" x="227" y="184" width="54" height="54" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF DOWN NOTE instance 0013" x="227" y="184" width="54" height="54" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF IDLE instance 0000" x="112" y="184" width="61" height="56" frameX="0" frameY="-17" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF IDLE instance 0001" x="112" y="184" width="61" height="56" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF IDLE instance 0002" x="108" y="126" width="62" height="57" frameX="0" frameY="-16" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF IDLE instance 0003" x="108" y="126" width="62" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF IDLE instance 0004" x="173" y="0" width="59" height="59" frameX="-3" frameY="-14" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF IDLE instance 0005" x="173" y="0" width="59" height="59" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF IDLE instance 0006" x="60" y="65" width="58" height="60" frameX="-5" frameY="-13" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF IDLE instance 0007" x="60" y="65" width="58" height="60" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF IDLE instance 0008" x="173" y="59" width="58" height="59" frameX="-4" frameY="-14" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF IDLE instance 0009" x="173" y="59" width="58" height="59" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF IDLE instance 0010" x="173" y="59" width="58" height="59" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF IDLE instance 0011" x="173" y="59" width="58" height="59" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF IDLE instance 0012" x="173" y="59" width="58" height="59" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF IDLE instance 0013" x="173" y="59" width="58" height="59" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF LEFT MISS instance 0000" x="118" y="65" width="54" height="58" frameX="-1" frameY="-15" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF LEFT MISS instance 0001" x="170" y="126" width="56" height="57" frameX="-2" frameY="-15" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF LEFT MISS instance 0002" x="170" y="126" width="56" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF LEFT MISS instance 0003" x="232" y="0" width="55" height="57" frameX="-2" frameY="-15" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF LEFT MISS instance 0004" x="232" y="0" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF LEFT MISS instance 0005" x="232" y="0" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF LEFT MISS instance 0006" x="232" y="0" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF LEFT MISS instance 0007" x="232" y="0" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF LEFT MISS instance 0008" x="232" y="0" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF LEFT MISS instance 0009" x="232" y="0" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF LEFT MISS instance 0010" x="232" y="0" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF LEFT MISS instance 0011" x="232" y="0" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF LEFT MISS instance 0012" x="232" y="0" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF LEFT MISS instance 0013" x="232" y="0" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF LEFT NOTE instance 0000" x="118" y="65" width="54" height="58" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF LEFT NOTE instance 0001" x="118" y="65" width="54" height="58" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF LEFT NOTE instance 0002" x="0" y="126" width="55" height="58" frameX="-2" frameY="-15" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF LEFT NOTE instance 0003" x="0" y="126" width="55" height="58" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF LEFT NOTE instance 0004" x="0" y="126" width="55" height="58" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF LEFT NOTE instance 0005" x="0" y="126" width="55" height="58" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF LEFT NOTE instance 0006" x="0" y="126" width="55" height="58" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF LEFT NOTE instance 0007" x="0" y="126" width="55" height="58" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF LEFT NOTE instance 0008" x="0" y="126" width="55" height="58" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF LEFT NOTE instance 0009" x="0" y="126" width="55" height="58" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF LEFT NOTE instance 0010" x="0" y="126" width="55" height="58" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF LEFT NOTE instance 0011" x="0" y="126" width="55" height="58" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF LEFT NOTE instance 0012" x="0" y="126" width="55" height="58" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF LEFT NOTE instance 0013" x="0" y="126" width="55" height="58" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF RIGHT MISS instance 0000" x="0" y="184" width="57" height="57" frameX="-14" frameY="-16" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF RIGHT MISS instance 0001" x="232" y="57" width="54" height="57" frameX="-14" frameY="-16" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF RIGHT MISS instance 0002" x="232" y="57" width="54" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF RIGHT MISS instance 0003" x="232" y="114" width="55" height="57" frameX="-14" frameY="-16" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF RIGHT MISS instance 0004" x="232" y="114" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF RIGHT MISS instance 0005" x="232" y="114" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF RIGHT MISS instance 0006" x="232" y="114" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF RIGHT MISS instance 0007" x="232" y="114" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF RIGHT MISS instance 0008" x="232" y="114" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF RIGHT MISS instance 0009" x="232" y="114" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF RIGHT MISS instance 0010" x="232" y="114" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF RIGHT MISS instance 0011" x="232" y="114" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF RIGHT MISS instance 0012" x="232" y="114" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF RIGHT MISS instance 0013" x="232" y="114" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF RIGHT NOTE instance 0000" x="0" y="184" width="57" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF RIGHT NOTE instance 0001" x="0" y="184" width="57" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF RIGHT NOTE instance 0002" x="57" y="184" width="55" height="57" frameX="-14" frameY="-16" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF RIGHT NOTE instance 0003" x="57" y="184" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF RIGHT NOTE instance 0004" x="57" y="184" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF RIGHT NOTE instance 0005" x="57" y="184" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF RIGHT NOTE instance 0006" x="57" y="184" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF RIGHT NOTE instance 0007" x="57" y="184" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF RIGHT NOTE instance 0008" x="57" y="184" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF RIGHT NOTE instance 0009" x="57" y="184" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF RIGHT NOTE instance 0010" x="57" y="184" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF RIGHT NOTE instance 0011" x="57" y="184" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF RIGHT NOTE instance 0012" x="57" y="184" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF RIGHT NOTE instance 0013" x="57" y="184" width="55" height="57" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF UP MISS instance 0000" x="0" y="0" width="57" height="65" frameX="-10" frameY="-8" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF UP MISS instance 0001" x="0" y="65" width="60" height="61" frameX="-8" frameY="-11" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF UP MISS instance 0002" x="0" y="65" width="60" height="61" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF UP MISS instance 0003" x="115" y="0" width="58" height="63" frameX="-9" frameY="-9" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF UP MISS instance 0004" x="115" y="0" width="58" height="63" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF UP MISS instance 0005" x="115" y="0" width="58" height="63" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF UP MISS instance 0006" x="115" y="0" width="58" height="63" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF UP MISS instance 0007" x="115" y="0" width="58" height="63" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF UP MISS instance 0008" x="115" y="0" width="58" height="63" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF UP MISS instance 0009" x="115" y="0" width="58" height="63" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF UP MISS instance 0010" x="115" y="0" width="58" height="63" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF UP MISS instance 0011" x="115" y="0" width="58" height="63" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF UP MISS instance 0012" x="115" y="0" width="58" height="63" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF UP MISS instance 0013" x="115" y="0" width="58" height="63" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF UP NOTE instance 0000" x="0" y="0" width="57" height="65" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF UP NOTE instance 0001" x="0" y="0" width="57" height="65" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF UP NOTE instance 0002" x="57" y="0" width="58" height="64" frameX="-9" frameY="-9" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF UP NOTE instance 0003" x="57" y="0" width="58" height="64" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF UP NOTE instance 0004" x="57" y="0" width="58" height="64" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF UP NOTE instance 0005" x="57" y="0" width="58" height="64" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF UP NOTE instance 0006" x="57" y="0" width="58" height="64" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF UP NOTE instance 0007" x="57" y="0" width="58" height="64" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF UP NOTE instance 0008" x="57" y="0" width="58" height="64" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF UP NOTE instance 0009" x="57" y="0" width="58" height="64" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF UP NOTE instance 0010" x="57" y="0" width="58" height="64" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF UP NOTE instance 0011" x="57" y="0" width="58" height="64" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF UP NOTE instance 0012" x="57" y="0" width="58" height="64" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+<SubTexture name="BF UP NOTE instance 0013" x="57" y="0" width="58" height="64" frameX="0" frameY="0" frameWidth="73" frameHeight="73" />
+</TextureAtlas>
