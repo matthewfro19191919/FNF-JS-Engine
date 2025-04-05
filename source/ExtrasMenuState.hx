@@ -22,11 +22,11 @@ import backend.HaxeCommit;
 
 using StringTools;
 
-class ExtrasMenuState extends MusicBeatState
+class PlayMenuState extends MusicBeatState
 {
 	public static final gitCommit:String = HaxeCommit.getGitCommitHash();
 
-	public static var psychEngineJSVersionNumber:String = '1.45.0'; //This is also used for Discord RPC
+	public static var psychEngineJSVersionNumber:String = '1.44.2'; //This is also used for Discord RPC
 	public static var psychEngineJSVersion:String = psychEngineJSVersionNumber #if commit + ' (Commit $gitCommit)' #end; //This is also used for Discord RPC
 	public static var psychEngineVersion:String = '0.6.3'; //This is also used for Discord RPC
 	public static var curSelected:Int = 0;
@@ -34,10 +34,10 @@ class ExtrasMenuState extends MusicBeatState
 	var menuItems:FlxTypedGroup<FlxSprite>;
 	private var camGame:FlxCamera;
 	private var camAchievement:FlxCamera;
-	
+
 	var optionShit:Array<String> = [
 		#if MODS_ALLOWED 'mods', #end
-		#if ACHIEVEMENTS_ALLOWED 'awards', #end
+		#if DISCORD_ALLOWED 'discord', #end
 		'credits'
 	];
 
@@ -55,28 +55,46 @@ class ExtrasMenuState extends MusicBeatState
 
 	override function create()
 	{
-		#if MODS_ALLOWED
-		Mods.pushGlobalMods();
-		#end
-		Mods.loadTopMod();
+		MusicBeatState.windowNameSuffix = " - Main Menu";
+		Paths.clearStoredMemory();
+		Paths.clearUnusedMemory();
 
-		#if DISCORD_ALLOWED
+		#if MODS_ALLOWED
+		Paths.pushGlobalMods();
+		#end
+		WeekData.loadTheFirstEnabledMod();
+
+		#if desktop
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence("In the Menus", null);
 		#end
+		debugKeys = ClientPrefs.copyKey(ClientPrefs.keyBinds.get('debug_1'));
+
+		camGame = initPsychCamera();
+		camAchievement = new FlxCamera();
+		camAchievement.bgColor.alpha = 0;
+
+		FlxG.cameras.add(camAchievement, false);
+
+		transIn = FlxTransitionableState.defaultTransIn;
+		transOut = FlxTransitionableState.defaultTransOut;
 
 		persistentUpdate = persistentDraw = true;
 
-		var yScroll:Float = 0.25;
-		var bg:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('backgrounds/space'));
-		bg.antialiasing = ClientPrefs.data.antialiasing;
+		var yScroll:Float = Math.max(0.25 - (0.05 * (optionShit.length - 4)), 0.1);
+		var bg:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('menuBG'));
 		bg.scrollFactor.set(0, yScroll);
+		bg.setGraphicSize(Std.int(bg.width * 1.175));
 		bg.updateHitbox();
 		bg.screenCenter();
+		bg.antialiasing = ClientPrefs.globalAntialiasing;
 		add(bg);
 
+
 		camFollow = new FlxObject(0, 0, 1, 1);
+		camFollowPos = new FlxObject(0, 0, 1, 1);
 		add(camFollow);
+		add(camFollowPos);
 
 		magenta = new FlxSprite(238, 199).loadGraphic(Paths.image('backgrounds/space'));
 		magenta.scrollFactor.set(0, yScroll);
@@ -90,77 +108,38 @@ class ExtrasMenuState extends MusicBeatState
 		magenta2.screenCenter();
 		add(magenta2);
 
+		// magenta.scrollFactor.set();
+
 		menuItems = new FlxTypedGroup<FlxSprite>();
 		add(menuItems);
 
-		for (num => option in optionShit)
+		var scale:Float = 1;
+		/*if(optionShit.length > 6) {
+			scale = 6 / optionShit.length;
+		}*/
+
+		for (i in 0...optionShit.length)
 		{
-			var item:FlxSprite = createMenuItem(option, 0, (num * 140) + 90);
-			item.y += (4 - optionShit.length) * 70; // Offsets for when you have anything other than 4 items
-			item.screenCenter(X);
+			var offset:Float = 108 - (Math.max(optionShit.length, 4) - 4) * 80;
+			var menuItem:FlxSprite = new FlxSprite(0, (i * 140)  + offset);
+			menuItem.scale.x = scale;
+			menuItem.scale.y = scale;
+	                menuItem.loadGraphic(Paths.image('mainmenu/' + optionShit[i]));
+			menuItem.animation.play('idle');
+			menuItem.ID = i;
+			menuItem.screenCenter(X);
+			menuItems.add(menuItem);
+			var scr:Float = (optionShit.length - 4) * 0.135;
+			if(optionShit.length < 6) scr = 0;
+			menuItem.scrollFactor.set(0, scr);
+			menuItem.antialiasing = ClientPrefs.globalAntialiasing;
+			//menuItem.setGraphicSize(Std.int(menuItem.width * 0.58));
+			menuItem.updateHitbox();
 		}
-
-		if (leftOption != null)
-			leftItem = createMenuItem(leftOption, 60, 490);
-		if (rightOption != null)
-		{
-			rightItem = createMenuItem(rightOption, FlxG.width - 60, 490);
-			rightItem.x -= rightItem.width;
-		}
-
-		var psychVer:FlxText = new FlxText(12, FlxG.height - 44, 0, "Psych Engine v" + psychEngineVersion, 12);
-		psychVer.scrollFactor.set();
-		psychVer.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		add(psychVer);
-		var fnfVer:FlxText = new FlxText(12, FlxG.height - 24, 0, "Friday Night Funkin' v" + Application.current.meta.get('version'), 12);
-		fnfVer.scrollFactor.set();
-		fnfVer.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		add(fnfVer);
-		changeItem();
-
-		#if ACHIEVEMENTS_ALLOWED
-		// Unlocks "Freaky on a Friday Night" achievement if it's a Friday and between 18:00 PM and 23:59 PM
-		var leDate = Date.now();
-		if (leDate.getDay() == 5 && leDate.getHours() >= 18)
-			Achievements.unlock('friday_night_play');
-
-		#if MODS_ALLOWED
-		Achievements.reloadList();
-		#end
-		#end
-
-		addTouchPad('NONE', 'E');
-
-		super.create();
-
-		FlxG.camera.follow(camFollow, null, 0.15);
-	}
-
-	function createMenuItem(name:String, x:Float, y:Float):FlxSprite
-	{
-	        var offset:Float = 108 - (Math.max(optionShit.length, 4) - 4) * 80;
-	        var menuItem:FlxSprite = new FlxSprite(0, (i * 140)  + offset);
-	        menuItem.scale.x = scale;
-	        menuItem.scale.y = scale;
-	        menuItem.loadGraphic(Paths.image('mainmenu/' + optionShit[i]));
-	        menuItem.ID = i;
-	        menuItem.screenCenter(X);
-	        menuItems.add(menuItem);
-	        var scr:Float = (optionShit.length - 4) * 0.135;
-	        if(optionShit.length < 6) scr = 0;
-	        menuItem.scrollFactor.set(0, scr);
-	        menuItem.antialiasing = ClientPrefs.globalAntialiasing;
-	        //menuItem.setGraphicSize(Std.int(menuItem.width * 0.58));
-	        menuItem.updateHitbox();
-
-	        var mchar:FlxSprite = new FlxSprite(238, 199).loadGraphic(Paths.image('backgrounds/' + optionShit));
-		mchar.scrollFactor.set(0, 0);
-		add(mchar);
-
 		switch (i)
 		{
 			case 0: 
-        		        menuItem.y = 269;
+        	    menuItem.y = 269;
 				menuItem.x = 241;
 			case 1: 
 				menuItem.y = 269;
@@ -169,7 +148,6 @@ class ExtrasMenuState extends MusicBeatState
 				menuItem.y = 269;
 				menuItem.x = 723;
 		}
-	}
 
 		FlxG.camera.follow(camFollow, null, 1);
 
@@ -352,6 +330,10 @@ class ExtrasMenuState extends MusicBeatState
 
 								switch (daChoice)
 								{
+									case 'play':
+										FlxG.switchState(PlayMenuState.new);
+									case 'extras':
+										FlxG.switchState(ExtrasMenuState.new);
 									case 'story_mode':
 										FlxG.switchState(StoryMenuState.new);
 									case 'freeplay':
@@ -368,13 +350,13 @@ class ExtrasMenuState extends MusicBeatState
 										LoadingState.loadAndSwitchState(options.OptionsState.new);
 									case 'extrended':
 										FlxG.switchState(FreeplayState.new);
-				     				PlayState.isUniverse = true;
+				     			                  	PlayState.isUniverse = true;
 									case 'golden':
 										FlxG.switchState(FreeplayState.new);
-                    PlayState.isGolden = true;
-									case 'daveandbambi':
+                                                                                PlayState.isGolden = true;
+			  						case 'daveandbambi':
 										FlxG.switchState(FreeplayState.new);
-                    PlayState.isDaveAndBambi = true;
+                                                                                PlayState.isDaveAndBambi = true;
 								}
 							});
 						}
