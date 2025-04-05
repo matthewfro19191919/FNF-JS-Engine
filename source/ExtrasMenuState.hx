@@ -141,7 +141,7 @@ class ExtrasMenuState extends MusicBeatState
 		switch (i)
 		{
 			case 0: 
-        	    menuItem.y = 269;
+        	                menuItem.y = 269;
 				menuItem.x = 241;
 			case 1: 
 				menuItem.y = 269;
