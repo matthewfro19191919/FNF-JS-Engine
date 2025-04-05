@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="bg-run.png">
+<SubTexture name="bg-run0000" x="0" y="0" width="1192" height="626" frameX="0" frameY="0" frameWidth="1192" frameHeight="626" />
+<SubTexture name="bg-run0001" x="0" y="0" width="1192" height="626" frameX="0" frameY="0" frameWidth="1192" frameHeight="626" />
+<SubTexture name="bg-run0002" x="1192" y="0" width="1192" height="626" frameX="0" frameY="0" frameWidth="1192" frameHeight="626" />
+<SubTexture name="bg-run0003" x="1192" y="0" width="1192" height="626" frameX="0" frameY="0" frameWidth="1192" frameHeight="626" />
+<SubTexture name="bg-run0004" x="0" y="626" width="1192" height="626" frameX="0" frameY="0" frameWidth="1192" frameHeight="626" />
+<SubTexture name="bg-run0005" x="0" y="626" width="1192" height="626" frameX="0" frameY="0" frameWidth="1192" frameHeight="626" />
+<SubTexture name="bg-run0006" x="1192" y="626" width="1192" height="626" frameX="0" frameY="0" frameWidth="1192" frameHeight="626" />
+<SubTexture name="bg-run0007" x="1192" y="626" width="1192" height="626" frameX="0" frameY="0" frameWidth="1192" frameHeight="626" />
+</TextureAtlas>
