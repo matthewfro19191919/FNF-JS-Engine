@@ -33,6 +33,7 @@ class MainMenuState extends MusicBeatState
 	public static var i:Int = 0;
 
 	var menuItems:FlxTypedGroup<FlxSprite>;
+	var menuItem:FlxSprite;
 	private var camGame:FlxCamera;
 	private var camAchievement:FlxCamera;
 
@@ -122,7 +123,7 @@ class MainMenuState extends MusicBeatState
 		for (i in 0...optionShit.length)
 		{
 			var offset:Float = 108 - (Math.max(optionShit.length, 4) - 4) * 80;
-			var menuItem:FlxSprite = new FlxSprite(0, (i * 140)  + offset);
+		        menuItem = new FlxSprite(0, (i * 140)  + offset);
 			menuItem.scale.x = scale;
 			menuItem.scale.y = scale;
 	        menuItem.loadGraphic(Paths.image('mainmenu/' + optionShit[i]));
