@@ -1,0 +1,5 @@
+Flashes Camera
+
+Value 1 = Color Hex of the flash
+
+Value 2 = Speed of the flash

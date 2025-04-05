@@ -1,0 +1,531 @@
+{
+	"song": {
+		"events": [
+			[
+				37402.5974025974,
+				[
+					[
+						"Camera Flash",
+						"ffffff",
+						"1"
+					]
+				]
+			],
+			[
+				43636.3636363637,
+				[
+					[
+						"Camera Flash",
+						"ffffff",
+						"1"
+					]
+				]
+			],
+			[
+				49870.1298701299,
+				[
+					[
+						"Camera Flash",
+						"ffffff",
+						"1"
+					]
+				]
+			],
+			[
+				56103.8961038962,
+				[
+					[
+						"Camera Flash",
+						"ffffff",
+						"1"
+					]
+				]
+			],
+			[
+				65454.5454545455,
+				[
+					[
+						"Change Character",
+						"gf",
+						"nuggbi"
+					],
+					[
+						"Flash Camera",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				68571.4285714286,
+				[
+					[
+						"Change Character",
+						"dad",
+						"nuggbi"
+					],
+					[
+						"Flash Camera",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				68580.8311688312,
+				[
+					[
+						"Change Character",
+						"gf",
+						"cakebi"
+					]
+				]
+			],
+			[
+				93506.4935064935,
+				[
+					[
+						"Change Character",
+						"dad",
+						"cakebi"
+					],
+					[
+						"Change Character",
+						"gf",
+						"nuggbi"
+					],
+					[
+						"Flash Camera",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				105974.025974026,
+				[
+					[
+						"Flash Camera",
+						"1",
+						""
+					],
+					[
+						"Change Character",
+						"dad",
+						"nuggbi"
+					],
+					[
+						"Change Character",
+						"gf",
+						"cakebi"
+					]
+				]
+			],
+			[
+				118441.558441558,
+				[
+					[
+						"Change Character",
+						"gf",
+						"none"
+					],
+					[
+						"Flash Camera",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				118441.558441558,
+				[
+					[
+						"Change Character",
+						"gf",
+						"none"
+					]
+				]
+			],
+			[
+				124675.324675325,
+				[
+					[
+						"Change Character",
+						"dad",
+						"fully-breakfast-pichi"
+					],
+					[
+						"Change Character",
+						"gf",
+						"nuggbi"
+					],
+					[
+						"Flash Camera",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				140259.74025974,
+				[
+					[
+						"Set Cam Zoom",
+						"0.7",
+						""
+					]
+				]
+			],
+			[
+				141818.181818182,
+				[
+					[
+						"Set Cam Zoom",
+						"0.6",
+						""
+					]
+				]
+			],
+			[
+				143376.623376623,
+				[
+					[
+						"Set Cam Zoom",
+						"0.5",
+						""
+					]
+				]
+			],
+			[
+				149610.389610389,
+				[
+					[
+						"Flash Camera",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				149610.389610389,
+				[
+					[
+						"Set Cam Zoom",
+						"0.8",
+						""
+					]
+				]
+			],
+			[
+				155746.753246753,
+				[
+					[
+						"Set Cam Zoom",
+						"0.5",
+						""
+					]
+				]
+			],
+			[
+				155844.155844156,
+				[
+					[
+						"Camera Flash",
+						"000000",
+						"1"
+					]
+				]
+			],
+			[
+				183896.103896104,
+				[
+					[
+						"Change Character",
+						"dad",
+						"chocolabi"
+					],
+					[
+						"Change Character",
+						"gf",
+						"none"
+					],
+					[
+						"Flash Camera",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				211948.051948052,
+				[
+					[
+						"Flash Camera",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				212045.454545454,
+				[
+					[
+						"Set Cam Zoom",
+						"0.7",
+						""
+					]
+				]
+			],
+			[
+				236785.714285714,
+				[
+					[
+						"Set Cam Zoom",
+						"0.5",
+						""
+					]
+				]
+			],
+			[
+				236883.116883117,
+				[
+					[
+						"Camera Flash",
+						"000000",
+						"1"
+					]
+				]
+			],
+			[
+				236893.519480519,
+				[
+					[
+						"Change Character",
+						"dad",
+						"chocolabi-crazy"
+					]
+				]
+			],
+			[
+				261818.181818181,
+				[
+					[
+						"Opponent Fade",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				264350.649350649,
+				[
+					[
+						"Change Character",
+						"dad",
+						"none"
+					]
+				]
+			],
+			[
+				264545.454545454,
+				[
+					[
+						"Opponent Fade",
+						"1",
+						"1000"
+					]
+				]
+			],
+			[
+				264935.064935065,
+				[
+					[
+						"Change Character",
+						"dad",
+						"bamburg"
+					],
+					[
+						"Flash Camera",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				330389.61038961,
+				[
+					[
+						"Flash Camera",
+						"1",
+						""
+					],
+					[
+						"Change Character",
+						"dad",
+						"baggett"
+					]
+				]
+			],
+			[
+				353766.233766233,
+				[
+					[
+						"Flash Camera",
+						"1",
+						""
+					],
+					[
+						"Change Character",
+						"gf",
+						"cakebi"
+					]
+				]
+			],
+			[
+				355324.675324675,
+				[
+					[
+						"Change Character",
+						"dad",
+						"cakebi"
+					],
+					[
+						"Change Character",
+						"gf",
+						"none"
+					],
+					[
+						"Flash Camera",
+						"1",
+						""
+					],
+					[
+						"Cinematics",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				367792.207792207,
+				[
+					[
+						"Change Character",
+						"dad",
+						"nuggbi"
+					],
+					[
+						"Flash Camera",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				380259.74025974,
+				[
+					[
+						"Flash Camera",
+						"1",
+						""
+					],
+					[
+						"Change Character",
+						"dad",
+						"fully-breakfast-pichi"
+					]
+				]
+			],
+			[
+				392727.272727272,
+				[
+					[
+						"Change Character",
+						"dad",
+						"chocolabi"
+					],
+					[
+						"Flash Camera",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				405194.805194804,
+				[
+					[
+						"Change Character",
+						"dad",
+						"bamburg"
+					],
+					[
+						"Flash Camera",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				416103.896103895,
+				[
+					[
+						"Set Cam Zoom",
+						"0.7",
+						""
+					]
+				]
+			],
+			[
+				416493.506493506,
+				[
+					[
+						"Set Cam Zoom",
+						"0.9",
+						""
+					]
+				]
+			],
+			[
+				416883.116883116,
+				[
+					[
+						"Set Cam Zoom",
+						"1.1",
+						""
+					]
+				]
+			],
+			[
+				417272.727272726,
+				[
+					[
+						"Set Cam Zoom",
+						"1.2",
+						""
+					]
+				]
+			],
+			[
+				417662.337662337,
+				[
+					[
+						"Set Cam Zoom",
+						"0.5",
+						""
+					],
+					[
+						"Flash Camera",
+						"1",
+						""
+					],
+					[
+						"Cinematics",
+						"",
+						"2"
+					]
+				]
+			]
+		]
+	}
+}
