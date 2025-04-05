@@ -107,7 +107,6 @@ class PlayMenuState extends MusicBeatState
 		magenta2.updateHitbox();
 		magenta2.screenCenter();
 		add(magenta2);
-
 		// magenta.scrollFactor.set();
 
 		menuItems = new FlxTypedGroup<FlxSprite>();
